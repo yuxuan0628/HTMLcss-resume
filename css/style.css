@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing:border-box;
+}
+
+.warp{
+    width: 1022px;
+    margin-left: auto;
+	margin-right: auto;
+    background: #fafafa;
+}
+
+/*banner*/
+
+.banner{
+    background-image: url(https://hexschool.github.io/HTML_sketch_export/assets/img-headerShape.png);
+    background-repeat:no-repeat;
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.infor{
+    padding-top: 124px;
+    padding-left: 135px;
+    text-align: center;
+}
+
+.infor h1{
+    font-size: 38px;
+    margin-top: 20px;
+}
+
+.infor p{
+    font-size: 12px;
+    margin:20px;
+    color: #4a4a4a;
+}
+
+.connect{
+    padding-top: 128px;
+    padding-left: 140px;
+}
+
+.connect li{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.connect li img{
+    padding: 12px 16px;
+}
+
+.connect li p{
+    font-size: 16px;
+    color: white;
+
+}
+
+/*skill*/
+
+.skill{
+    margin-bottom: 60px;
+}
+
+.skill .title h2{
+    color: #1736dc;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skill-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill-content .box1, .box2 ,.box3{
+    width: 288px;
+    box-shadow:0px 0px 2px gray;
+    padding: 24px 40px ;
+    border-radius:8px;
+    background: white;
+}
+.skill-content .box1{
+    text-align: center;
+    border-bottom: 8px solid #f58d23;
+}
+
+.skill-content .box2{
+    text-align: center;
+    border-bottom: 8px solid #539e43;
+}
+
+.skill-content .box3{
+    text-align: center;
+    border-bottom: 8px solid #6762a6;
+}
+
+.skill-content .box1 img, .skill-content .box2 img, .skill-content .box3 img {
+    margin-bottom: 24px;
+}
+
+.skill-content .box1 h3, .skill-content .box2 h3, .skill-content .box3 h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill-content .box1 ul li, .skill-content .box2 ul li, .skill-content .box3 ul li {
+    font-size: 8px;
+    text-align:left;
+    list-style-type:disc;
+    line-height: 1.5;
+    list-style-position: inside;
+}
+
+/*experience*/
+
+.experience {
+    width: 1022px;
+    margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: 63px;
+}
+
+/*灰色線*/
+.experience .line {
+    width: 2px;
+    height: 554px;
+    background: #d8d8d8;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 0;
+}
+
+/*經歷內容＋粉色六角型*/
+.experience .node {
+    position: relative;
+}
+
+/*灰六角形*/
+.experience .dot-start {
+    margin-bottom: 48px;
+}
+
+/*灰結束橫線*/
+.experience .line-end {
+    width: 46px;
+    height: 4px;
+    background: #d8d8d8;
+    margin: 0 auto;
+    position: relative;
+    border-radius:8px;
+  }
+
+
+.experience h2{
+    color: #1736dc;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.data-right, .data-left {
+	border: 1px solid #fb56bf;
+    background: white;
+	width: 260px;
+	border-radius: 8px;
+    padding: 16px 10px;
+    position: relative;
+}
+.experience .data-right{
+    left: 52%;
+    text-align: left;
+}
+
+.experience .data-left {
+    left: 22.5%;
+    text-align: right;
+}
+
+.data-right span, .data-left span{
+    font-size: 10px;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.data-right h3, .data-left h3{
+    font-size: 12px;
+    color: #8a1837;
+    font-weight: bolder;
+    line-height: 1.5;
+}
+
+.data-right h4, .data-left h4{
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.data-right p, .data-left p{
+    font-size: 10px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+/*works*/
+
+.works{
+    margin-bottom: 106px;
+}
+
+.works .title h2{
+    color: #fb56bf;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.works-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.works-content .works1, .works-content .works2, .works-content .works3{
+    width: 284px;
+    background: white;
+    border-radius: 8px;
+}
+
+.works-content .works1:hover, .works-content .works2:hover, .works-content .works3:hover{
+    box-shadow: 3px 3px 10px #bababa;
+    cursor:pointer;
+}
+
+.works-content .works1 h3, .works-content .works2 h3, .works-content .works3 h3{
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 1.5;
+    padding: 14px 8px 0 8px;
+}
+
+.works-content .works1 p, .works-content .works2 p, .works-content .works3 p{
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 0 8px 14px 8px;
+}
+
+.works-content .works1 .img{
+    padding-top: 38px;
+    background: #fdb4e3;
+    text-align: right;
+    border-radius: 8px 8px 0 0;
+
+}
+.works-content .works2 .img{
+    padding: 35px 0;
+    background: #424242;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+
+}
+
+.works-content .works3 .img{
+    padding: 35px 0;
+    background: #8ad7fa;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+
+}
+
+/*about*/
+
+.about{
+    margin: 0 176px;
+    padding-bottom: 74px;
+}
+
+.about h2{
+    color: #fb56bf;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about .content{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.about .content .img img{
+    width: 260px;
+    height: 336px;
+}
+
+.about .content .text{
+    margin:34px 0 0 45px ;
+}
+
+.about .content .text p{
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/*footer*/
+ .footer{
+    background-image: url(https://hexschool.github.io/HTML_sketch_export/assets/img-Looper-bg.png);
+ }
+
+ .footer p{
+    padding: 35px 0;
+    text-align: center;
+ }
